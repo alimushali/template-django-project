@@ -1,0 +1,18 @@
+- model: AbstractUnit1
+  pk: 1
+  fields:
+    name: 'Unit #1'
+    description: "Best unit you'll ever see"
+    integer_property: 1
+- model: AbstractUnit1
+  pk: 2
+  fields:
+    name: 'Unit #2'
+    description: "Typical wannabe unit #1"
+    integer_property: 3
+- model: AbstractUnit1
+  pk: 1
+  fields:
+    name: 'just unit'
+    description: "trash"
+    integer_property: 100500
