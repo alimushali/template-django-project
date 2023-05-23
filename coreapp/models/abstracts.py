@@ -4,7 +4,7 @@ from django.db import models
 class AbstractUnit1(models.Model):
     name = models.TextField()
     description = models.TextField()
-    numeric_property = models.IntegerField()
+    integer_property = models.IntegerField()
 
 
     class Meta:
@@ -18,7 +18,8 @@ class LinkedUnit1(models.Model):
     )
     name = models.TextField()
     description = models.TextField()
-    numeric_property = models.IntegerField()
+    integer_property = models.IntegerField()
+    numeric_property = models.DecimalField()
 
     class Meta:
         table_name="linked_unit_1"
