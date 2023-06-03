@@ -8,19 +8,18 @@ class AbstractUnit1(models.Model):
 
 
     class Meta:
-        table_name="abstract_unit_1"
+        db_table="coreapp_abstract_unit_1"
 
 
 class LinkedUnit1(models.Model):
-    abstract_unit_id = models.ForeignKey(
+    abstract_unit = models.ForeignKey(
         AbstractUnit1,
-        primary_key=True
+        on_delete=models.CASCADE
     )
     name = models.TextField()
     description = models.TextField()
     integer_property = models.IntegerField()
-    numeric_property = models.DecimalField()
+    numeric_property = models.DecimalField(max_digits=19, decimal_places=10)
 
     class Meta:
-        table_name="linked_unit_1"
-
+        db_table="coreapp_linked_unit_1"

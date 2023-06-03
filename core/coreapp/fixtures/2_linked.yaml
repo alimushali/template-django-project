@@ -1,0 +1,7 @@
+- model: coreapp.LinkedUnit1
+  fields:
+    abstract_unit: 2
+    name: 'linked_Unit #1'
+    description: "Best unit you'll ever see"
+    integer_property: 1
+    numeric_property: 14.2345
