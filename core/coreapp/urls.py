@@ -1,6 +1,11 @@
-from django.urls import path
-from .views import empty_view
+from django.urls import path, include
+from rest_framework import routers
+from .views import AbstractUnit1ViewSet
+
+
+router = routers.DefaultRouter()
+router.register('abstracts', AbstractUnit1ViewSet)
 
 urlpatterns = [
-    path('abstracts', empty_view)
+    path('', include(router.urls)),
 ]
