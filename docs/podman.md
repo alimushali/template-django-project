@@ -9,5 +9,5 @@ podman build -t template-django -f Containerfile
 
 ## Start
 ```bash
-podman run -p 8080:8000 e93
+podman run -p 8080:8000 CONTAIDER_ID
 ```
