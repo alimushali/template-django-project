@@ -12,7 +12,7 @@ cd ./template-django-project
 
 # assuming you have python, virtualenv and python-wheel installed
 python -m venv venv && source ./venv/bin/activate && pip install -r requirements.txt
-chmod +x ./make_db.sh && chmod +x ./run_gunicorn.sh && /opt/app/make_db.sh
+chmod +x ./make_db.sh && chmod +x ./run_gunicorn.sh && ./make_db.sh
 ```
 
 
